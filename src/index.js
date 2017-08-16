@@ -3,10 +3,13 @@ import 'angular-ui-router';
 import 'angular-sanitize';
 import 'angular-animate';
 import 'jirikavi/AngularJS-Toaster';
+import 'angular-strap';
 
 export default angular.module('mstanev.angular.core', [
   'ui.router',
   'ngSanitize',
   'ngAnimate',
-  'toaster'
+  'toaster',
+  'ngAnimate',
+  'mgcrea.ngStrap'
 ]);

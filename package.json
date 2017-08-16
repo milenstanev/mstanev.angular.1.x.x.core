@@ -13,6 +13,7 @@
       "angular": "github:angular/bower-angular@1.6.5",
       "angular-animate": "github:angular/bower-angular-animate@^1.6.5",
       "angular-sanitize": "github:angular/bower-angular-sanitize@^1.6.5",
+      "angular-strap": "npm:angular-strap@^2.3.12",
       "angular-ui-router": "npm:angular-ui-router@^1.0.3",
       "jirikavi/AngularJS-Toaster": "github:jirikavi/AngularJS-Toaster@^2.1.0",
       "json": "github:systemjs/plugin-json@^0.3.0"
@@ -27,7 +28,7 @@
     "jspm-install": "./node_modules/.bin/jspm install -y",
     "dev": "node util/start.dev.js",
     "build": "node util/build.js",
-    "bundle": "./node_modules/.bin/jspm bundle ./src/index.js --minify",
+    "bundle": "./node_modules/.bin/jspm bundle ./src/index.js --minify --inject --no-mangle",
     "esdoc": "esdoc -c esdoc.json",
     "esdoc-show": "open ./esdoc/index.html"
   }
