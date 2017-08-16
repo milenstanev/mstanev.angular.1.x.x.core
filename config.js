@@ -21,8 +21,10 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
+    "css": "github:systemjs/plugin-css@0.1.35",
     "jirikavi/AngularJS-Toaster": "github:jirikavi/AngularJS-Toaster@2.1.0",
     "json": "github:systemjs/plugin-json@0.3.0",
+    "text": "github:systemjs/plugin-text@0.0.11",
     "github:angular/bower-angular-animate@1.6.5": {
       "angular": "github:angular/bower-angular@1.6.5"
     },

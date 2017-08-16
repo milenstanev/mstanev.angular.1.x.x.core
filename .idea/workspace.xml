@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3050bb1f-5692-42a2-9924-294bee13f075" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js.map" afterPath="$PROJECT_DIR$/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/build.js" afterPath="$PROJECT_DIR$/util/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,29 +25,31 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
                   <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-                  <folding />
+                  <folding>
+                    <marker date="1502926324000" expanded="true" signature="230:973" ph="{...}" />
+                    <marker date="1502926324000" expanded="true" signature="252:806" ph="{&quot;angular&quot;: &quot;github:angular/bower-angular@1.6.5&quot;...}" />
+                    <marker date="1502926324000" expanded="true" signature="831:969" ph="{&quot;babel&quot;: &quot;npm:babel-core@^5.8.24&quot;...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/util/build.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="350">
-                  <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+                  <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#269#3586#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="486">
+                  <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -84,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -93,6 +93,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/util/build.js" />
+        <option value="$PROJECT_DIR$/config.js" />
       </list>
     </option>
   </component>
@@ -152,11 +153,6 @@
               <item name="angular.core" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular.core" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular.core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular.core" type="462c0819:PsiDirectoryNode" />
-              <item name="index.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +267,7 @@
       <updated>1502895772139</updated>
       <workItem from="1502895773627" duration="13447000" />
       <workItem from="1502918771553" duration="9000" />
-      <workItem from="1502922268463" duration="1093000" />
+      <workItem from="1502922268463" duration="1661000" />
     </task>
     <task id="LOCAL-00001" summary="jspm bundle">
       <created>1502905487248</created>
@@ -315,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502923399766</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Put back stable flow.">
+      <created>1502923585453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1502923585453</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14549000" />
+    <option name="totallyTimeSpent" value="15117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -359,7 +362,8 @@
     <MESSAGE value="Switch to build" />
     <MESSAGE value="update" />
     <MESSAGE value="other test" />
-    <option name="LAST_COMMIT_MESSAGE" value="other test" />
+    <MESSAGE value="Put back stable flow." />
+    <option name="LAST_COMMIT_MESSAGE" value="Put back stable flow." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -413,7 +417,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1502926324000" expanded="true" signature="230:973" ph="{...}" />
+            <marker date="1502926324000" expanded="true" signature="252:806" ph="{&quot;angular&quot;: &quot;github:angular/bower-angular@1.6.5&quot;...}" />
+            <marker date="1502926324000" expanded="true" signature="831:969" ph="{&quot;babel&quot;: &quot;npm:babel-core@^5.8.24&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -481,7 +489,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1502926324000" expanded="true" signature="230:973" ph="{...}" />
+            <marker date="1502926324000" expanded="true" signature="252:806" ph="{&quot;angular&quot;: &quot;github:angular/bower-angular@1.6.5&quot;...}" />
+            <marker date="1502926324000" expanded="true" signature="831:969" ph="{&quot;babel&quot;: &quot;npm:babel-core@^5.8.24&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,7 +636,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
+          <folding>
+            <marker date="1502926324000" expanded="true" signature="230:973" ph="{...}" />
+            <marker date="1502926324000" expanded="true" signature="252:806" ph="{&quot;angular&quot;: &quot;github:angular/bower-angular@1.6.5&quot;...}" />
+            <marker date="1502926324000" expanded="true" signature="831:969" ph="{&quot;babel&quot;: &quot;npm:babel-core@^5.8.24&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,20 +654,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#269#3586#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding />
         </state>
       </provider>
