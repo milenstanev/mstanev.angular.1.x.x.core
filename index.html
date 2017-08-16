@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>iMX Core</title>
+</head>
+<body ng-cloak>
+
+<main></main>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('index').then(() => { // prod
+  //System.import('./src/index').then(() => { // dev
+    angular.module('app', [])
+      .component('main', {
+        template: '<h1>Hi {{$ctrl.name}}</h1>',
+        controller: ($scope) => {
+          const $ctrl = $scope.$ctrl;
+
+          $ctrl.name = 'John Doe';
+        }
+      });
+  });
+</script>
+</body>
+</html>

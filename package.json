@@ -1,0 +1,33 @@
+{
+  "name": "milenstanev-mstanev.angular.1.x.x.core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "jspm": "^0.16.53"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@1.6.5",
+      "angular-animate": "github:angular/bower-angular-animate@^1.6.5",
+      "angular-sanitize": "github:angular/bower-angular-sanitize@^1.6.5",
+      "angular-ui-router": "npm:angular-ui-router@^1.0.3",
+      "jirikavi/AngularJS-Toaster": "github:jirikavi/AngularJS-Toaster@^2.1.0",
+      "json": "github:systemjs/plugin-json@^0.3.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "scripts": {
+    "jspm-install": "./node_modules/.bin/jspm install -y",
+    "dev": "node util/start.dev.js",
+    "build": "node util/build.js",
+    "esdoc": "esdoc -c esdoc.json",
+    "esdoc-show": "open ./esdoc/index.html"
+  }
+}
