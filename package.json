@@ -1,7 +1,7 @@
 {
   "name": "milenstanev-mstanev.angular.1.x.x.core",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build.js",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.18.13",
@@ -27,6 +27,7 @@
     "jspm-install": "./node_modules/.bin/jspm install -y",
     "dev": "node util/start.dev.js",
     "build": "node util/build.js",
+    "bundle": "./node_modules/.bin/jspm bundle ./src/index.js",
     "esdoc": "esdoc -c esdoc.json",
     "esdoc-show": "open ./esdoc/index.html"
   }
