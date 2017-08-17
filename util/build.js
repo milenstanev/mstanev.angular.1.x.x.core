@@ -13,7 +13,7 @@ const baseUrl = '.';
 const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
 builder.config({
-  meta: {
+  /*meta: {
     'angular': {
       build: false
     },
@@ -25,8 +25,20 @@ builder.config({
     },
     'angular-ui-router': {
       build: false
+    },
+    'jirikavi/AngularJS-Toaster': {
+      build: false
+    },
+    'json': {
+      build: false
+    },
+    'text': {
+      build: false
+    },
+    'css': {
+      build: false
     }
-  }
+  }*/
 });
 
 //======= Settings =======//
