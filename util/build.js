@@ -13,7 +13,7 @@ const baseUrl = '.';
 const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
 builder.config({
-  /*meta: {
+  meta: {
     'angular': {
       build: false
     },
@@ -38,7 +38,7 @@ builder.config({
     'css': {
       build: false
     }
-  }*/
+  }
 });
 
 //======= Settings =======//
