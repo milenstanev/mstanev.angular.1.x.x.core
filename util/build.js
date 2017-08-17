@@ -25,18 +25,6 @@ builder.config({
     },
     'angular-ui-router': {
       build: false
-    },
-    'jirikavi/AngularJS-Toaster': {
-      build: false
-    },
-    'json': {
-      build: false
-    },
-    'text': {
-      build: false
-    },
-    'css': {
-      build: false
     }
   }
 });
