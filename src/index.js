@@ -5,7 +5,7 @@ import 'angular-animate';
 import 'jirikavi/AngularJS-Toaster';
 import 'angular-strap';
 
-export const Core = angular.module('mstanev.angular.core', [
+export default Core = angular.module('mstanev.angular.core', [
   'ui.router',
   'ngSanitize',
   'ngAnimate',
