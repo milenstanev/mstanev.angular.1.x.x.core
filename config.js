@@ -13,24 +13,24 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.6.5",
-    "angular-animate": "github:angular/bower-angular-animate@1.6.5",
-    "angular-sanitize": "github:angular/bower-angular-sanitize@1.6.5",
+    "angular": "github:angular/bower-angular@1.6.6",
+    "angular-animate": "github:angular/bower-angular-animate@1.6.6",
+    "angular-sanitize": "github:angular/bower-angular-sanitize@1.6.6",
     "angular-strap": "npm:angular-strap@2.3.12",
-    "angular-ui-router": "npm:angular-ui-router@1.0.3",
+    "angular-ui-router": "npm:@uirouter/angularjs@1.0.6",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
-    "jirikavi/AngularJS-Toaster": "github:jirikavi/AngularJS-Toaster@2.1.0",
+    "jirikavi/AngularJS-Toaster": "github:jirikavi/AngularJS-Toaster@2.2.0",
     "json": "github:systemjs/plugin-json@0.3.0",
-    "github:angular/bower-angular-animate@1.6.5": {
-      "angular": "github:angular/bower-angular@1.6.5"
+    "github:angular/bower-angular-animate@1.6.6": {
+      "angular": "github:angular/bower-angular@1.6.6"
     },
-    "github:angular/bower-angular-sanitize@1.6.5": {
-      "angular": "github:angular/bower-angular@1.6.5"
+    "github:angular/bower-angular-sanitize@1.6.6": {
+      "angular": "github:angular/bower-angular@1.6.6"
     },
-    "github:jirikavi/AngularJS-Toaster@2.1.0": {
-      "css": "github:systemjs/plugin-css@0.1.35"
+    "github:jirikavi/AngularJS-Toaster@2.2.0": {
+      "css": "github:systemjs/plugin-css@0.1.36"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -50,7 +50,13 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:@uirouter/core@5.0.3": {
+    "npm:@uirouter/angularjs@1.0.6": {
+      "@uirouter/core": "npm:@uirouter/core@5.0.6",
+      "angular": "npm:angular@1.6.6",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:@uirouter/core@5.0.6": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
@@ -59,12 +65,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "util": "github:jspm/nodelibs-util@0.1.0"
-    },
-    "npm:angular-ui-router@1.0.3": {
-      "@uirouter/core": "npm:@uirouter/core@5.0.3",
-      "angular": "npm:angular@1.6.5",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
