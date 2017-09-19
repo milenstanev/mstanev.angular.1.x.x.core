@@ -49,7 +49,7 @@ const FORMAT = 'umd';
 builder
   .buildStatic(
     `${baseUrl}/src/index.js`,
-    `${baseUrl}/index.js`,
+    `${baseUrl}/angular.core.dist.js`,
     {
       minify: MINIFY,
       mangle: false,

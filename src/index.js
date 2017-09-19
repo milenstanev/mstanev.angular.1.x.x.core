@@ -12,4 +12,4 @@ export const Core = angular.module('mstanev.angular.core', [
   'toaster',
   'ngAnimate',
   'mgcrea.ngStrap'
-]);
+]).name;

@@ -1,7 +1,7 @@
 {
   "name": "milenstanev-mstanev.angular.1.x.x.core",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "angular.core.dist.js",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.18.13",
