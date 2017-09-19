@@ -12,40 +12,13 @@ const baseUrl = '.';
  */
 const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
-let builderConfigMeta = {
-  /*meta: {
-    'angular': {
-      build: false
-    },
-    'angular-animate': {
-      build: false
-    },
-    'angular-sanitize': {
-      build: false
-    },
-    'angular-ui-router': {
-      build: false
-    },
-    'jirikavi/AngularJS-Toaster': {
-      build: false
-    },
-    'json': {
-      build: false
-    },
-    'text': {
-      build: false
-    },
-    'css': {
-      build: false
-    }
-  }*/
-};
+let builderConfigMeta = {};
 
-for(let key in pjson.jspm.dependencies) {
+/*for(let key in pjson.jspm.dependencies) {
   builderConfigMeta[key] = {
     build: false
   };
-}
+}*/
 
 console.log( JSON.stringify(builderConfigMeta) )
 
