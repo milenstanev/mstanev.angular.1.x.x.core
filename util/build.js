@@ -12,7 +12,7 @@ const baseUrl = '.';
  */
 const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
-builder.config({
+let builderConfigMeta = {
   /*meta: {
     'angular': {
       build: false
@@ -39,28 +39,34 @@ builder.config({
       build: false
     }
   }*/
-});
+};
+
+for(let key in pjson.dependencies) {
+  builderConfigMeta[key] = {
+    build: false
+  };
+}
 
 //======= Settings =======//
-const MINIFY = true;
-const SOURCE_MAP = true;
-const FORMAT = 'umd';
+builder.config({
+  meta: builderConfigMeta
+});
 
 builder
   .buildStatic(
     `${baseUrl}/src/index.js`,
-    `${baseUrl}/angular.core.dist.js`,
+    `${baseUrl}/${pjson.main}`,
     {
-      minify: MINIFY,
+      inject: true,
+      minify: true,
       mangle: false,
-      sourceMaps: SOURCE_MAP,
-      format: FORMAT,
-      runtime: false
+      sourceMaps: true,
+      format: 'umd',
+      runtime: true
     }
   ).then(function() {
     console.log('Build complete\n');
     console.log(`Build name: ${pjson.registry}:${pjson.name}@${pjson.version}`);
-    console.log(`Build info: \n - minify: ${MINIFY}\n - sourceMaps: ${SOURCE_MAP}\n - format: ${FORMAT}`);
   })
   .catch(function(err) {
     console.log('Build error\n');

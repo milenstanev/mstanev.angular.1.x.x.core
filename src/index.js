@@ -1,11 +1,11 @@
-import angular from 'angular';
-import 'angular-ui-router';
-import 'angular-sanitize';
-import 'angular-animate';
-import 'jirikavi/AngularJS-Toaster';
-import 'angular-strap';
+export {default as angular} from 'angular';
+export {default as uiRouter} from 'angular-ui-router';
+export {default as angularSanitize} from 'angular-sanitize';
+export {default as angularAnimate} from 'angular-animate';
+export {default as ngAnimate} from 'jirikavi/AngularJS-Toaster';
+export {default as ngStrap}  from 'angular-strap';
 
-export default angular.module('mstanev.angular.core', [
+export const CoreModule = angular.module('mstanev.angular.core', [
   'ui.router',
   'ngSanitize',
   'ngAnimate',
