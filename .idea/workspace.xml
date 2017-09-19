@@ -6,9 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular.core.dist.js" afterPath="$PROJECT_DIR$/angular.core.dist.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular.core.dist.js.map" afterPath="$PROJECT_DIR$/angular.core.dist.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/build.js" afterPath="$PROJECT_DIR$/util/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +22,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.43870565">
       <split-first>
         <leaf>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+                <state relative-caret-position="468">
+                  <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -37,8 +35,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="18">
+                  <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -64,11 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/util/build.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+                <state relative-caret-position="245">
+                  <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding>
                     <element signature="e#351#751#0" expanded="false" />
                   </folding>
@@ -83,8 +81,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
+                <state relative-caret-position="252">
+                  <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -123,9 +121,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/util/build.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/util/build.js" />
       </list>
     </option>
   </component>
@@ -179,11 +177,6 @@
               <item name="angular.core" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular.core" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular.core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular.core" type="462c0819:PsiDirectoryNode" />
-              <item name="angular.core.dist.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -293,7 +286,7 @@
       <workItem from="1502918771553" duration="9000" />
       <workItem from="1502922268463" duration="1093000" />
       <workItem from="1502938226153" duration="25000" />
-      <workItem from="1505811339851" duration="7714000" />
+      <workItem from="1505811339851" duration="7887000" />
     </task>
     <task id="LOCAL-00001" summary="jspm bundle">
       <created>1502905487248</created>
@@ -442,11 +435,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505826104133</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="New flow">
+      <created>1505829604254</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1505829604254</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23808000" />
+    <option name="totallyTimeSpent" value="23981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1135" extended-state="6" />
@@ -526,7 +526,8 @@
     <MESSAGE value="With default +" />
     <MESSAGE value="Test x" />
     <MESSAGE value="Test x back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test x back" />
+    <MESSAGE value="New flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="New flow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -828,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jspm_packages/github/angular/bower-angular@1.6.6/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -843,22 +836,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,13 +847,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="245">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#351#751#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

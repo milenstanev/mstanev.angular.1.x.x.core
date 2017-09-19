@@ -41,11 +41,13 @@ let builderConfigMeta = {
   }*/
 };
 
-for(let key in pjson.dependencies) {
+for(let key in pjson.jspm.dependencies) {
   builderConfigMeta[key] = {
     build: false
   };
 }
+
+console.log( JSON.stringify(builderConfigMeta) )
 
 //======= Settings =======//
 builder.config({
