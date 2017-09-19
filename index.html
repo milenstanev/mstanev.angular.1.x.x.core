@@ -12,7 +12,9 @@
 <script src="config.js"></script>
 <script>
   System.import('index').then(() => { // prod
-  //System.import('./src/index').then(() => { // dev
+  // System.import('./src/index').then((exported) => { // dev
+
+    /// Test module
     angular.module('app', [])
       .component('main', {
         template: '<h1>Hi {{$ctrl.name}}</h1>',
@@ -22,6 +24,7 @@
           $ctrl.name = 'John Doe';
         }
       });
+
   });
 </script>
 </body>

@@ -11,34 +11,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "build.js": [
-      "src/index.js",
-      "npm:angular-strap@2.3.12.js",
-      "npm:angular-strap@2.3.12/index.js",
-      "npm:angular-strap@2.3.12/dist/angular-strap.tpl.min.js",
-      "npm:angular-strap@2.3.12/dist/angular-strap.js",
-      "github:jirikavi/AngularJS-Toaster@2.2.0.js",
-      "github:jirikavi/AngularJS-Toaster@2.2.0/toaster.js",
-      "github:jirikavi/AngularJS-Toaster@2.2.0/toaster.css!github:systemjs/plugin-css@0.1.36.js",
-      "github:angular/bower-angular-animate@1.6.6.js",
-      "github:angular/bower-angular-animate@1.6.6/angular-animate.js",
-      "github:angular/bower-angular@1.6.6.js",
-      "github:angular/bower-angular@1.6.6/angular.js",
-      "github:angular/bower-angular-sanitize@1.6.6.js",
-      "github:angular/bower-angular-sanitize@1.6.6/angular-sanitize.js",
-      "npm:@uirouter/angularjs@1.0.6.js",
-      "npm:@uirouter/angularjs@1.0.6/release/ui-router-angularjs.js",
-      "github:jspm/nodelibs-process@0.1.2.js",
-      "github:jspm/nodelibs-process@0.1.2/index.js",
-      "npm:process@0.11.10.js",
-      "npm:process@0.11.10/browser.js",
-      "npm:@uirouter/core@5.0.6.js",
-      "npm:@uirouter/core@5.0.6/_bundles/ui-router-core.js",
-      "npm:angular@1.6.6.js",
-      "npm:angular@1.6.6/angular.js"
-    ]
-  },
 
   map: {
     "angular": "github:angular/bower-angular@1.6.6",
