@@ -1,11 +1,11 @@
-export {default as angular} from 'angular';
-export {default as uiRouter} from 'angular-ui-router';
-export {default as angularSanitize} from 'angular-sanitize';
-export {default as angularAnimate} from 'angular-animate';
-export {default as ngAnimate} from 'jirikavi/AngularJS-Toaster';
-export {default as ngStrap}  from 'angular-strap';
+import {default as angular} from 'angular';
+import {default as uiRouter} from 'angular-ui-router';
+import {default as angularSanitize} from 'angular-sanitize';
+import {default as angularAnimate} from 'angular-animate';
+import {default as toaster} from 'jirikavi/AngularJS-Toaster';
+import {default as ngStrap}  from 'angular-strap';
 
-export const CoreModule = angular.module('mstanev.angular.core', [
+const CoreModule = angular.module('mstanev.angular.core', [
   'ui.router',
   'ngSanitize',
   'ngAnimate',
@@ -13,3 +13,13 @@ export const CoreModule = angular.module('mstanev.angular.core', [
   'ngAnimate',
   'mgcrea.ngStrap'
 ]).name;
+
+export {
+  CoreModule,
+  angular,
+  uiRouter,
+  angularSanitize,
+  angularAnimate,
+  toaster,
+  ngStrap
+}

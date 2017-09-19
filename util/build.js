@@ -68,7 +68,7 @@ builder
     }
   ).then(function() {
     console.log('Build complete\n');
-    console.log(`Build name: ${pjson.registry}:${pjson.name}@${pjson.version}`);
+    console.log(`Build name: ${pjson.name}@${pjson.version}`);
   })
   .catch(function(err) {
     console.log('Build error\n');

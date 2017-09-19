@@ -1,1 +1,1 @@
-{"version":3,"sources":["src/index.js"],"names":["CoreModule","angular","module","name"],"mappings":"4rFAOaA,2jBAAAA,WAAaC,QAAQC,OAAO,wBACvC,YACA,aACA,YACA,UACA,YACA,mBACCC","file":"angular.core.dist.js"}
+{"version":3,"sources":["src/index.js"],"names":["CoreModule","angular","module","name","uiRouter","angularSanitize","angularAnimate","toaster","ngStrap"],"mappings":"6vFAOMA,mQAAAA,WAAaC,QAAQC,OAAO,wBAChC,YACA,aACA,YACA,UACA,YACA,mBACCC,0BAGDH,8BACAC,4BACAG,oCACAC,0CACAC,kCACAC,2BACAC","file":"angular.core.dist.js"}
