@@ -11,19 +11,19 @@
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>
-  SystemJS.import('angular.core.dist').then(({ angular, CoreModule }) => { // prod
-  //SystemJS.import('./src/index').then(({ angular, CoreModule }) => { // dev
+  //SystemJS.import('angular.core.dist').then(({ angular, CoreModule }) => { // prod
+  SystemJS.import('./src/index').then(({ angular, CoreModule }) => { // dev
     /// Test module
 
     angular.module('app', [
         CoreModule
       ])
       .component('main', {
-        template: '<h1>Hi {{$ctrl.name}}</h1>',
+        template: '<h1>It {{$ctrl.str}}</h1>',
         controller: ($scope) => {
           const $ctrl = $scope.$ctrl;
 
-          $ctrl.name = 'John Doe';
+          $ctrl.str = 'Works';
         }
       });
 
