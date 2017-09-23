@@ -14,11 +14,11 @@ const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
 let builderConfigMeta = {};
 
-/*for(let key in pjson.jspm.dependencies) {
+for(let key in pjson.jspm.dependencies) {
   builderConfigMeta[key] = {
     build: false
   };
-}*/
+}
 
 console.log( JSON.stringify(builderConfigMeta) )
 
