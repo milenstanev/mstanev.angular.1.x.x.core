@@ -2,32 +2,40 @@
 <html lang="en" ng-app="app">
 <head>
   <meta charset="UTF-8">
-  <title>iMX Core</title>
+  <title>Title</title>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    SystemJS.config({
+      defaultJSExtensions: true,
+      transpiler: "plugin-babel",
+      babelOptions: {
+        presets: ['babel-preset-es2017'],
+        plugins: ['babel-plugin-transform-decorators-legacy']
+      },
+      map: {
+        "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js"
+      }
+    });
+
+      //SystemJS.import('./angular.1.x.x.core.js').then(({ angular, CoreModule }) => { // prod
+      SystemJS.import('./src/index').then(({ angular, CoreModule }) => { // dev
+      /// Test module
+      angular.module('app', [
+          CoreModule
+        ])
+        .component('appComponnet', {
+          template: '<h1>It {{$ctrl.str}}</h1>',
+          controller: ($scope) => {
+            const $ctrl = $scope.$ctrl;
+
+            $ctrl.str = 'Works';
+          }
+        });
+    });
+  </script>
 </head>
 <body ng-cloak>
-
-<main></main>
-
-<script src="jspm_packages/system.js"></script>
-<script src="config.js"></script>
-<script>
-  //SystemJS.import('angular.core.dist').then(({ angular, CoreModule }) => { // prod
-  SystemJS.import('./src/index').then(({ angular, CoreModule }) => { // dev
-    /// Test module
-
-    angular.module('app', [
-        CoreModule
-      ])
-      .component('main', {
-        template: '<h1>It {{$ctrl.str}}</h1>',
-        controller: ($scope) => {
-          const $ctrl = $scope.$ctrl;
-
-          $ctrl.str = 'Works';
-        }
-      });
-
-  });
-</script>
+<app-componnet></app-componnet>
 </body>
 </html>
