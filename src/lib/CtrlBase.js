@@ -1,4 +1,10 @@
 //region CtrlBase
+function make$Inject(args) {
+  this.constructor.$inject.map((item, index) => {
+    this[item] = args[index];
+  })
+}
+
 export class CtrlBase {
   constructor(...args) {
     this.constructor.init.call(this, args)
