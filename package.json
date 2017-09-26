@@ -29,7 +29,8 @@
       "angular-strap": "npm:angular-strap@^2.3.12",
       "angular-ui-router": "npm:@uirouter/angularjs@^1.0.6",
       "jirikavi/AngularJS-Toaster": "^2.1.0",
-      "json": "systemjs/plugin-json@^0.3.0"
+      "json": "systemjs/plugin-json@^0.3.0",
+      "milenstanev/mstanev.angular.1.x.x.core": "^0.0.5"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
