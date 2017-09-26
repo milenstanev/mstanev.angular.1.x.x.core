@@ -5,7 +5,7 @@ function make$Inject(args) {
   })
 }
 
-export class CtrlBase {
+export default class CtrlBase {
   constructor(...args) {
     this.constructor.init.call(this, args)
   }
