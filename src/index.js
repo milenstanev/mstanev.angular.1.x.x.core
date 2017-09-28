@@ -5,6 +5,9 @@ import { default as angularAnimate } from 'angular/bower-angular-animate';
 import { default as toaster } from 'jirikavi/AngularJS-Toaster';
 import { default as ngStrap }  from 'angular-strap';
 import { default as CtrlBase } from './lib/CtrlBase.js';
+import { default as text } from 'text';
+import { default as css } from 'css';
+import { default as json } from 'json';
 
 const CoreModule = angular.module('mstanev.angular.core', [
   'ui.router',
@@ -23,5 +26,8 @@ export {
   angularAnimate,
   toaster,
   ngStrap,
-  CtrlBase
+  CtrlBase,
+  text,
+  css,
+  json
 }
