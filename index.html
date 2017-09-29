@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <script src="jspm_packages/system-csp-production.js"></script>
+  <script src="jspm_packages/system.js"></script>
+  <!--<script src="jspm_packages/system-polyfills.js"></script>-->
   <script src="system-config.js"></script>
   <script>
       SystemJS.config({
@@ -18,8 +19,7 @@
           }
       });
 
-      SystemJS.import('angular.1.x.x.core').then(({ angular, CoreModule, asd }) => { // prod
-      //SystemJS.import('./src/index').then(({ angular, CoreModule, asd }) => { // dev
+      SystemJS.import('./src/index').then(({angular, CoreModule}) => { // dev
 
           /// Test module
           angular.module('app', [CoreModule])
