@@ -2,7 +2,7 @@
   "name": "milenstanev-mstanev.angular.1.x.x.core",
   "version": "0.0.5",
   "description": "",
-  "main": "src/index",
+  "main": "angular.1.x.x.core",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/jspm install -y",
