@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <script src="jspm_packages/system.js"></script>
+  <script src="jspm_packages/system-csp-production.js"></script>
   <script src="jspm_packages/system-polyfills.js"></script>
   <script src="system-config.js"></script>
   <script>
-      SystemJS.config({
+      /*SystemJS.config({
           defaultJSExtensions: true,
           transpiler: "plugin-babel",
           babelOptions: {
@@ -17,11 +17,10 @@
           map: {
               "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js"
           }
-      });
+      });*/
 
-      //SystemJS.import('./src/index').then(({angular, CoreModule, CtrlBase}) => { // dev
-      SystemJS.import('./angular.1.x.x.core').then(({angular, CoreModule, CtrlBase}) => { // dev
-
+      /*SystemJS.import('./src/index').then(({angular, CoreModule, CtrlBase}) => { // dev
+      //SystemJS.import('./angular.1.x.x.core').then(({angular, CoreModule, CtrlBase}) => { // dev
           /// Test module
           angular.module('app', [CoreModule])
             .component('appComponnet', {
@@ -32,6 +31,19 @@
                 $ctrl.str = 'Works ....';
               }
             });
+      });*/
+
+      SystemJS.import('./angular.1.x.x.core').then(({angular, CoreModule, CtrlBase}) => { // dev
+          /// Test module
+          angular.module('app', [CoreModule])
+              .component('appComponnet', {
+                  template: '<h1>It {{$ctrl.str}}</h1>',
+                  controller: ($scope) => {
+                      const $ctrl = $scope.$ctrl;
+
+                      $ctrl.str = 'Works ....';
+                  }
+              });
       });
   </script>
 </head>
