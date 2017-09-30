@@ -22,6 +22,13 @@ const CoreModule = angular.module('mstanev.angular.core', [
   'mgcrea.ngStrap'
 ]).name;
 
+
+class Test {
+  static $inject = () => [$http];
+}
+
+class Asd extends Test {}
+
 export {
   CoreModule,
   angular,

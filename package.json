@@ -4,7 +4,7 @@
   "description": "",
   "registry": "github",
   "repository": "https://github.com/milenstanev/mstanev.angular.1.x.x.core.git",
-  "main": "angular.1.x.x.core",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/jspm install -y",
@@ -25,6 +25,7 @@
   "author": "Milen Stanev <milen.stanev@gmail.com>",
   "license": "ISC",
   "jspm": {
+    "configFile": "system-config.js",
     "dependencies": {
       "angular-strap": "npm:angular-strap@^2.3.12",
       "angular-ui-router": "npm:@uirouter/angularjs@^1.0.6",

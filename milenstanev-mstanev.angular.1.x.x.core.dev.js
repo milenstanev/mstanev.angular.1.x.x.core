@@ -3,33 +3,88 @@
 (["1"], [], false, function($__System) {
 var require = this.require, exports = this.exports, module = this.module;
 !function(e){function r(e,r){for(var n=e.split(".");n.length;)r=r[n.shift()];return r}function n(n){if("string"==typeof n)return r(n,e);if(!(n instanceof Array))throw new Error("Global exports must be a string or array.");for(var t={},o=!0,f=0;f<n.length;f++){var i=r(n[f],e);o&&(t["default"]=i,o=!1),t[n[f].split(".").pop()]=i}return t}function t(r){if(Object.keys)Object.keys(e).forEach(r);else for(var n in e)a.call(e,n)&&r(n)}function o(r){t(function(n){if(-1==l.call(s,n)){try{var t=e[n]}catch(o){s.push(n)}r(n,t)}})}var f,i=$__System,a=Object.prototype.hasOwnProperty,l=Array.prototype.indexOf||function(e){for(var r=0,n=this.length;n>r;r++)if(this[r]===e)return r;return-1},s=["_g","sessionStorage","localStorage","clipboardData","frames","frameElement","external","mozAnimationStartTime","webkitStorageInfo","webkitIndexedDB","mozInnerScreenY","mozInnerScreenX"];i.set("@@global-helpers",i.newModule({prepareGlobal:function(r,t,i){var a=e.define;e.define=void 0;var l;if(i){l={};for(var s in i)l[s]=e[s],e[s]=i[s]}return t||(f={},o(function(e,r){f[e]=r})),function(){var r;if(t)r=n(t);else{r={};var i,s;o(function(e,n){f[e]!==n&&"undefined"!=typeof n&&(r[e]=n,"undefined"!=typeof i?s||i===n||(s=!0):i=n)}),r=s?r:i}if(l)for(var u in l)e[u]=l[u];return e.define=a,r}}}))}("undefined"!=typeof self?self:global);
-$__System.register('2', [], function (_export, _context) {
+/* */
+"format esm";
+
+$__System.register("2", [], function (_export, _context) {
+  "use strict";
+
+  return {
+    setters: [],
+    execute: function () {
+      _export("default", function (self, call) {
+        if (!self) {
+          throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        }
+
+        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+      });
+    }
+  };
+});
+/* */
+"format esm";
+
+$__System.register("3", [], function (_export, _context) {
+  "use strict";
+
+  return {
+    setters: [],
+    execute: function () {
+      _export("default", function (subClass, superClass) {
+        if (typeof superClass !== "function" && superClass !== null) {
+          throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+        }
+
+        subClass.prototype = Object.create(superClass && superClass.prototype, {
+          constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+          }
+        });
+        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+      });
+    }
+  };
+});
+$__System.registerDynamic('4', [], false, function ($__require, $__exports, $__module) {
+  var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
+
+  (function ($__global) {
+    window.SystemBuildConfig = {
+      defaultJSExtensions: true,
+      transpiler: "plugin-babel",
+      babelOptions: {
+        presets: ['babel-preset-es2017'],
+        plugins: ['babel-plugin-transform-decorators-legacy']
+      },
+      map: {
+        // In fact it's browser version of package: plugin-babel
+        "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js"
+      }
+    };
+
+    window.SystemJS.config(window.SystemBuildConfig);
+  })(this);
+
+  return _retrieveGlobal();
+});
+$__System.register('5', ['4'], function (_export, _context) {
   "use strict";
 
   var SystemBuildConfig;
   return {
-    setters: [],
+    setters: [function (_) {}],
     execute: function () {
-      _export('SystemBuildConfig', SystemBuildConfig = {
-        defaultJSExtensions: true,
-        transpiler: "plugin-babel",
-        babelOptions: {
-          presets: ['babel-preset-es2017'],
-          plugins: ['babel-plugin-transform-decorators-legacy']
-        },
-        map: {
-          // In fact it's browser version of package: plugin-babel
-          "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js"
-        }
-      });
-
-      window.SystemJS.config(SystemBuildConfig);
+      _export('SystemBuildConfig', SystemBuildConfig = window.SystemBuildConfig);
 
       _export('SystemBuildConfig', SystemBuildConfig);
     }
   };
 });
-$__System.registerDynamic("3", [], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("6", [], false, function ($__require, $__exports, $__module) {
   var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, "angular", null);
 
   (function ($__global) {
@@ -33292,12 +33347,12 @@ $__System.registerDynamic("3", [], false, function ($__require, $__exports, $__m
 
   return _retrieveGlobal();
 });
-$__System.registerDynamic("4", ["3"], true, function ($__require, exports, module) {
+$__System.registerDynamic("7", ["6"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("3");
+  module.exports = $__require("6");
 });
-$__System.registerDynamic('5', ['6'], true, function ($__require, exports, module) {
+$__System.registerDynamic('8', ['9'], true, function ($__require, exports, module) {
   /* */
   "format cjs";
 
@@ -38174,14 +38229,14 @@ $__System.registerDynamic('5', ['6'], true, function ($__require, exports, modul
       exports.UIRouterPluginBase = UIRouterPluginBase;
       Object.defineProperty(exports, '__esModule', { value: true });
     });
-  })($__require('6'));
+  })($__require('9'));
 });
-$__System.registerDynamic("7", ["5"], true, function ($__require, exports, module) {
+$__System.registerDynamic("a", ["8"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("5");
+  module.exports = $__require("8");
 });
-$__System.registerDynamic('8', [], true, function ($__require, exports, module) {
+$__System.registerDynamic('b', [], true, function ($__require, exports, module) {
     var global = this || self,
         GLOBAL = global;
     // shim for using process in browser
@@ -38370,22 +38425,22 @@ $__System.registerDynamic('8', [], true, function ($__require, exports, module) 
         return 0;
     };
 });
-$__System.registerDynamic("9", ["8"], true, function ($__require, exports, module) {
+$__System.registerDynamic("c", ["b"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("8");
+  module.exports = $__require("b");
 });
-$__System.registerDynamic('a', ['9'], true, function ($__require, exports, module) {
+$__System.registerDynamic('d', ['c'], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__System._nodeRequire ? process : $__require('9');
+  module.exports = $__System._nodeRequire ? process : $__require('c');
 });
-$__System.registerDynamic("6", ["a"], true, function ($__require, exports, module) {
+$__System.registerDynamic("9", ["d"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("a");
+  module.exports = $__require("d");
 });
-$__System.registerDynamic('b', ['4', '7', '6'], true, function ($__require, exports, module) {
+$__System.registerDynamic('e', ['7', 'a', '9'], true, function ($__require, exports, module) {
   /* */
   "format cjs";
 
@@ -38393,7 +38448,7 @@ $__System.registerDynamic('b', ['4', '7', '6'], true, function ($__require, expo
       GLOBAL = global;
   (function (process) {
     (function (global, factory) {
-      typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, $__require('4'), $__require('7')) : typeof undefined === 'function' && define.amd ? define(['exports', 'angular', '@uirouter/core'], factory) : factory(global['@uirouter/angularjs'] = global['@uirouter/angularjs'] || {}, global.angular, global['@uirouter/core']);
+      typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, $__require('7'), $__require('a')) : typeof undefined === 'function' && define.amd ? define(['exports', 'angular', '@uirouter/core'], factory) : factory(global['@uirouter/angularjs'] = global['@uirouter/angularjs'] || {}, global.angular, global['@uirouter/core']);
     })(this, function (exports, ng_from_import, _uirouter_core) {
       'use strict';
 
@@ -39399,14 +39454,14 @@ $__System.registerDynamic('b', ['4', '7', '6'], true, function ($__require, expo
       exports.UrlRouterProvider = UrlRouterProvider;
       Object.defineProperty(exports, '__esModule', { value: true });
     });
-  })($__require('6'));
+  })($__require('9'));
 });
-$__System.registerDynamic("c", ["b"], true, function ($__require, exports, module) {
+$__System.registerDynamic("f", ["e"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("b");
+  module.exports = $__require("e");
 });
-$__System.registerDynamic("d", ["e"], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("10", ["11"], false, function ($__require, $__exports, $__module) {
   var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
 
   (function ($__global) {
@@ -40178,12 +40233,12 @@ $__System.registerDynamic("d", ["e"], false, function ($__require, $__exports, $
 
   return _retrieveGlobal();
 });
-$__System.registerDynamic("f", ["d"], true, function ($__require, exports, module) {
+$__System.registerDynamic("12", ["10"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("d");
+  module.exports = $__require("10");
 });
-$__System.registerDynamic("10", [], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("13", [], false, function ($__require, $__exports, $__module) {
   var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, "angular", null);
 
   (function ($__global) {
@@ -73446,12 +73501,12 @@ $__System.registerDynamic("10", [], false, function ($__require, $__exports, $__
 
   return _retrieveGlobal();
 });
-$__System.registerDynamic("e", ["10"], true, function ($__require, exports, module) {
+$__System.registerDynamic("11", ["13"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("10");
+  module.exports = $__require("13");
 });
-$__System.registerDynamic("11", ["e"], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("14", ["11"], false, function ($__require, $__exports, $__module) {
   var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
 
   (function ($__global) {
@@ -77550,19 +77605,19 @@ $__System.registerDynamic("11", ["e"], false, function ($__require, $__exports, 
 
   return _retrieveGlobal();
 });
-$__System.registerDynamic("12", ["11"], true, function ($__require, exports, module) {
+$__System.registerDynamic("15", ["14"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("11");
+  module.exports = $__require("14");
 });
-$__System.registerDynamic("13", [], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("16", [], false, function ($__require, $__exports, $__module) {
   var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
 
   (function ($__global) {})(this);
 
   return _retrieveGlobal();
 });
-$__System.registerDynamic("14", ["13"], false, function ($__require, $__exports, $__module) {
+$__System.registerDynamic("17", ["16"], false, function ($__require, $__exports, $__module) {
     var _retrieveGlobal = $__System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
 
     (function ($__global) {
@@ -78039,12 +78094,12 @@ $__System.registerDynamic("14", ["13"], false, function ($__require, $__exports,
 
     return _retrieveGlobal();
 });
-$__System.registerDynamic("15", ["14"], true, function ($__require, exports, module) {
+$__System.registerDynamic("18", ["17"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("14");
+  module.exports = $__require("17");
 });
-$__System.registerDynamic('16', [], true, function ($__require, exports, module) {
+$__System.registerDynamic('19', [], true, function ($__require, exports, module) {
   /* */
   "format cjs";
   /**
@@ -82580,7 +82635,7 @@ $__System.registerDynamic('16', [], true, function ($__require, exports, module)
     angular.module('mgcrea.ngStrap', ['mgcrea.ngStrap.modal', 'mgcrea.ngStrap.aside', 'mgcrea.ngStrap.alert', 'mgcrea.ngStrap.button', 'mgcrea.ngStrap.select', 'mgcrea.ngStrap.datepicker', 'mgcrea.ngStrap.timepicker', 'mgcrea.ngStrap.navbar', 'mgcrea.ngStrap.tooltip', 'mgcrea.ngStrap.popover', 'mgcrea.ngStrap.dropdown', 'mgcrea.ngStrap.typeahead', 'mgcrea.ngStrap.scrollspy', 'mgcrea.ngStrap.affix', 'mgcrea.ngStrap.tab', 'mgcrea.ngStrap.collapse']);
   })(window, document);
 });
-$__System.registerDynamic('17', [], true, function ($__require, exports, module) {
+$__System.registerDynamic('1a', [], true, function ($__require, exports, module) {
   /* */
   "format cjs";
   /**
@@ -82620,23 +82675,23 @@ $__System.registerDynamic('17', [], true, function ($__require, exports, module)
     }]);
   }(window, document);
 });
-$__System.registerDynamic('18', ['16', '17'], true, function ($__require, exports, module) {
+$__System.registerDynamic('1b', ['19', '1a'], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
   /* */
-  $__require('16');
-  $__require('17');
+  $__require('19');
+  $__require('1a');
   module.exports = 'mgcrea.ngStrap';
 });
-$__System.registerDynamic("19", ["18"], true, function ($__require, exports, module) {
+$__System.registerDynamic("1c", ["1b"], true, function ($__require, exports, module) {
   var global = this || self,
       GLOBAL = global;
-  module.exports = $__require("18");
+  module.exports = $__require("1b");
 });
 /* */
 "format esm";
 
-$__System.register("1a", [], function (_export, _context) {
+$__System.register("1d", [], function (_export, _context) {
   "use strict";
 
   return {
@@ -82653,7 +82708,7 @@ $__System.register("1a", [], function (_export, _context) {
 /* */
 "format esm";
 
-$__System.register("1b", [], function (_export, _context) {
+$__System.register("1e", [], function (_export, _context) {
   "use strict";
 
   return {
@@ -82679,7 +82734,7 @@ $__System.register("1b", [], function (_export, _context) {
     }
   };
 });
-$__System.register('1c', ['1a', '1b'], function (_export, _context) {
+$__System.register('1f', ['1d', '1e'], function (_export, _context) {
   "use strict";
 
   var _classCallCheck, _createClass, CtrlBase;
@@ -82694,10 +82749,10 @@ $__System.register('1c', ['1a', '1b'], function (_export, _context) {
   }
 
   return {
-    setters: [function (_a) {
-      _classCallCheck = _a.default;
-    }, function (_b) {
-      _createClass = _b.default;
+    setters: [function (_d) {
+      _classCallCheck = _d.default;
+    }, function (_e) {
+      _createClass = _e.default;
     }],
     execute: function () {
       _export('default', CtrlBase = function () {
@@ -82732,30 +82787,55 @@ $__System.register('1c', ['1a', '1b'], function (_export, _context) {
     }
   };
 });
-$__System.register('1', ['2', 'e', 'c', 'f', '12', '15', '19', '1c'], function (_export, _context) {
+$__System.register('1', ['2', '3', '1d', '5', '11', 'f', '12', '15', '18', '1c', '1f'], function (_export, _context) {
   "use strict";
 
-  var SystemBuildConfig, angular, uiRouter, angularSanitize, angularAnimate, toaster, ngStrap, CtrlBase, CoreModule;
+  var _possibleConstructorReturn, _inherits, _classCallCheck, SystemBuildConfig, angular, uiRouter, angularSanitize, angularAnimate, toaster, ngStrap, CtrlBase, _class, _temp, CoreModule, Test, Asd;
+
   return {
     setters: [function (_) {
-      SystemBuildConfig = _.SystemBuildConfig;
-    }, function (_e) {
-      angular = _e.default;
-    }, function (_c) {
-      uiRouter = _c.default;
-    }, function (_f) {
-      angularSanitize = _f.default;
+      _possibleConstructorReturn = _.default;
     }, function (_2) {
-      angularAnimate = _2.default;
+      _inherits = _2.default;
+    }, function (_d) {
+      _classCallCheck = _d.default;
     }, function (_3) {
-      toaster = _3.default;
+      SystemBuildConfig = _3.SystemBuildConfig;
     }, function (_4) {
-      ngStrap = _4.default;
-    }, function (_c2) {
-      CtrlBase = _c2.default;
+      angular = _4.default;
+    }, function (_f) {
+      uiRouter = _f.default;
+    }, function (_5) {
+      angularSanitize = _5.default;
+    }, function (_6) {
+      angularAnimate = _6.default;
+    }, function (_7) {
+      toaster = _7.default;
+    }, function (_c) {
+      ngStrap = _c.default;
+    }, function (_f2) {
+      CtrlBase = _f2.default;
     }],
     execute: function () {
       _export('CoreModule', CoreModule = angular.module('mstanev.angular.core', ['ui.router', 'ngSanitize', 'ngAnimate', 'toaster', 'ngAnimate', 'mgcrea.ngStrap']).name);
+
+      Test = (_temp = _class = function Test() {
+        _classCallCheck(this, Test);
+      }, _class.$inject = function () {
+        return [$http];
+      }, _temp);
+
+      Asd = function (_Test) {
+        _inherits(Asd, _Test);
+
+        function Asd() {
+          _classCallCheck(this, Asd);
+
+          return _possibleConstructorReturn(this, (Asd.__proto__ || Object.getPrototypeOf(Asd)).apply(this, arguments));
+        }
+
+        return Asd;
+      }(Test);
 
       _export('CoreModule', CoreModule);
 
@@ -82788,4 +82868,4 @@ $__System.register('1', ['2', 'e', 'c', 'f', '12', '15', '19', '1c'], function (
   else
     factory();
 });
-//# sourceMappingURL=angular.1.x.x.core.dev.js.map
+//# sourceMappingURL=milenstanev-mstanev.angular.1.x.x.core.dev.js.map

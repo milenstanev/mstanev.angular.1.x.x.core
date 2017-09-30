@@ -27,7 +27,7 @@ const SOURCE = `${BASE_URL}/src/index.js`;
  */
 const PRODUCTION = ext => {
   if(isMainSource) {
-    return `${BASE_URL}/${pjson.main}${ext ? '.' + ext : ''}.js`
+    return `${BASE_URL}/${pjson.name}${ext ? '.' + ext : ''}.js`
   } else {
     console.error(new Error(`\  Not implemented yet!`));
   }
@@ -35,12 +35,11 @@ const PRODUCTION = ext => {
 /**
  * Configure builder paths
  */
-const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/config.js`);
+const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/${pjson.jspm.configFile}`);
 /**
  * Configure jspm|SystemJS|Babel
  */
 let buildConfig = {
-  meta: {},
   defaultJSExtensions: true,
   transpiler: "plugin-babel",
   babelOptions: {
@@ -48,6 +47,7 @@ let buildConfig = {
     plugins: ['babel-plugin-transform-decorators-legacy']
   },
   map: {
+    // In fact it's browser version of package: plugin-babel
     "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js"
   }
 };
