@@ -27,7 +27,7 @@ const SOURCE = `${BASE_URL}/src/index.js`;
  */
 const PRODUCTION = ext => {
   if(isMainSource) {
-    return `${BASE_URL}/${pjson.main}${ext ? '.' + ext : ''}.js`
+    return `${BASE_URL}/${pjson.main.replace('.dev', '')}${ext ? '.' + ext : ''}.js`
   } else {
     console.error(new Error(`\  Not implemented yet!`));
   }
