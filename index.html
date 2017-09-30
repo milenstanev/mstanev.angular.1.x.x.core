@@ -21,11 +21,11 @@
         angular.bootstrap(document.body, ['app']);
     };
 
-    SystemJS.import('core.dev.js').then(createApp) // dev bundle
+    //SystemJS.import('core.dev.js').then(createApp) // dev bundle
     //SystemJS.import('./core.js').then(createApp) // prod bundle
-    /*SystemJS.import('./src/lib/SystemBuildConfig').then(() => {
-      SystemJS.import('./src/index').then(loadApp)
-    })*/
+    SystemJS.import('./src/lib/SystemBuildConfig').then(() => {
+      SystemJS.import('./src/index').then(createApp)
+    })
   </script>
 </head>
 <body ng-cloak>

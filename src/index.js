@@ -1,6 +1,3 @@
-export {default} from 'plugin-babel';
-export {default as babelPresetEs2017} from 'babel-preset-es2017';
-export {default as babelPluginTransformDecoratorsLegacy} from 'babel-plugin-transform-decorators-legacy';
 import SystemBuildConfig from './lib/SystemBuildConfig.js';
 
 //region AngularJS + core modules about current application
