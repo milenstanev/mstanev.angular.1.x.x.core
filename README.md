@@ -11,4 +11,9 @@
     - toaster
     - ngAnimate
     - mgcrea.ngStrap
+    
+- Usage
+    TODO: ...
+    -- multiple way of usage, dev = [multiple-files, bundled-files], prod  = [multiple-files, bundled-files]
+        -- important about dependency management
    

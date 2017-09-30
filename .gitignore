@@ -1,7 +1,15 @@
 .DS_Store
 /jspm_packages/
 /node_modules/
-/.idea/
+/.idea/workspace.xml
+/.idea/watcherTasks.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles
+/.idea/dictionaries
+/.idea/core.iml
+##/Left libraries
 /npm-debug.log
 /esdoc/
 /config.js

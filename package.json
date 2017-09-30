@@ -13,7 +13,10 @@
     "docker-stop": "docker-compose stop",
     "bash": "docker-compose exec jspm.angular.app bash",
     "start": "node ./util/start.js",
-    "build": "node ./util/dist.js app .",
+    "build": "node ./util/dist.js main",
+    "build:all": "npm run build:dev && npm run build:prod",
+    "build:dev": "node ./util/dist.js main dev",
+    "build:prod": "node ./util/dist.js main prod -deps=false",
     "jspm-link": "./node_modules/.bin/jspm link -y",
     "jspm-update": "./node_modules/.bin/jspm update && ./node_modules/.bin/jspm clean",
     "jspm-unbundle": "./node_modules/.bin/jspm unbundle",
@@ -39,12 +42,13 @@
       "babel-preset-es2017": "npm:babel-preset-es2017@^6.24.1",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4",
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+      "plugin-babel": "npm:systemjs-plugin-babel@0.0.25"
     }
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "eslint": "^4.7.1",
     "jspm": "^0.16.53"
-  }
+  },
+  "dependencies": {}
 }
