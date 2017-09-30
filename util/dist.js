@@ -82,7 +82,7 @@ let buildDev = () => {  console.info('Start build dev');
   for(let key in pjson.jspm.dependencies) {
     if(!builderConfigMeta.hasOwnProperty(key)) {
       builderConfigMeta[key] = {
-        build: true
+        build: false
       };
     }
   }
