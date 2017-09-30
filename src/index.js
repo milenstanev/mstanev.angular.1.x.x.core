@@ -1,4 +1,4 @@
-import { SystemBuildConfig } from './lib/SystemBuildConfig.js';
+import SystemBuildConfig from './lib/SystemBuildConfig.js';
 
 //region AngularJS + core modules about current application
 import { default as angular } from 'angular/bower-angular';
