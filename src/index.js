@@ -1,3 +1,6 @@
+import 'plugin-babel';
+import 'babel-preset-es2017';
+import 'babel-plugin-transform-decorators-legacy';
 import SystemBuildConfig from './lib/SystemBuildConfig.js';
 
 //region AngularJS + core modules about current application

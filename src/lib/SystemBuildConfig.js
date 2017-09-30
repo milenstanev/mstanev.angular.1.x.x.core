@@ -15,4 +15,6 @@ if(typeof window === 'object') {
   window.SystemJS.config(SystemBuildConfig);
 }
 
-module.exports = SystemBuildConfig;
+if(typeof module === 'object') {
+  module.exports = SystemBuildConfig;
+}
