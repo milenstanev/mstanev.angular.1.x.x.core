@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script src="jspm_packages/system.js"></script>
+  <script src="jspm_packages/system-polyfills.src.js"></script>
   <script src="system-config.js"></script>
   <script>
     let createApp = ({angular, CoreModule}) => {
-        angular.module('app', [
-            CoreModule
-          ])
-          .component('appComponnet', {
-            template: '<h1>It {{$ctrl.str}}</h1>',
-            controller: ($scope) => {
-              const $ctrl = $scope.$ctrl;
-              $ctrl.str = 'Works';
-            }
-          });
+      angular.module('app', [
+          CoreModule
+        ])
+        .component('appComponnet', {
+          template: '<h1>It {{$ctrl.str}}</h1>',
+          controller: ($scope) => {
+            const $ctrl = $scope.$ctrl;
+            $ctrl.str = 'Works';
+          }
+        });
 
-        angular.bootstrap(document.body, ['app']);
+      angular.bootstrap(document.body, ['app']);
     };
 
     //SystemJS.import('core.dev.js').then(createApp) // dev bundle

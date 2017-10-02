@@ -50,6 +50,13 @@ let bundleSettings = {
   mangle: false,
   sourceMaps: true,
   format: 'umd'
+
+
+  /*externals: ['angular/bower-angular'],
+  globalName: 'milenstanev/mstanev.angular.1.x.x.core',
+  globalDeps: {
+    'angular': 'angular/bower-angular'
+  }*/
 };
 
 /**
@@ -82,7 +89,7 @@ let buildDev = () => {  console.info('Start build dev');
   for(let key in pjson.jspm.dependencies) {
     if(!builderConfigMeta.hasOwnProperty(key)) {
       builderConfigMeta[key] = {
-        build: false
+        build: true
       };
     }
   }
