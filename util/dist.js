@@ -35,7 +35,7 @@ const PRODUCTION = ext => {
 /**
  * Configure builder paths
  */
-const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/${pjson.jspm.configFile}`);
+const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/${pjson.configFile || pjson.jspm.configFile}`);
 /**
  * Configure jspm|SystemJS|Babel
  */
