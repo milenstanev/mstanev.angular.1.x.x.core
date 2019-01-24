@@ -21,6 +21,9 @@ const BASE_URL = '.';
  * @type {string}
  */
 const SOURCE = `${BASE_URL}/src/index.js`;
+
+const CONFIG_FILE = 'system-config.js';
+
 /**
  * @param ext - extra sufix
  * @constructor
@@ -35,7 +38,7 @@ const PRODUCTION = ext => {
 /**
  * Configure builder paths
  */
-const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/config.js`);
+const builder = new Builder(`${BASE_URL}/`, `${BASE_URL}/${CONFIG_FILE}`);
 /**
  * Configure jspm|SystemJS|Babel
  */

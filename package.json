@@ -24,6 +24,7 @@
   "author": "Milen Stanev <milen.stanev@gmail.com>",
   "license": "ISC",
   "jspm": {
+    "configFile": "system-config.js",
     "dependencies": {
       "angular-strap": "npm:angular-strap@^2.3.12",
       "angular-ui-router": "npm:@uirouter/angularjs@^1.0.6",
