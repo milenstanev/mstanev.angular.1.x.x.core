@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <script src="jspm_packages/system.js"></script>
-  <script src="config.js"></script>
+  <!--<script src="jspm_packages/system.js"></script>-->
+  <script src="jspm_packages/system-csp-production.js"></script>
+  <script src="system-config.js"></script>
   <script>
     //SystemJS.import('./angular.1.x.x.core.dev.js').then(({ angular, CoreModule, SystemBuildConfig }) => { // dev bundle
     SystemJS.import('./angular.1.x.x.core.js').then(({ angular, CoreModule, SystemBuildConfig }) => { // prod bundle
