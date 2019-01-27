@@ -61,7 +61,7 @@ let buildConfig = {
 let bundleSettings = {
   inject: true,
   minify: true,
-  mangle: false,
+  mangle: true,
   sourceMaps: true,
   format: 'umd'
 };
